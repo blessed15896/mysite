@@ -41,7 +41,7 @@ p.date {
     font-style: italic;
 }
 
-left {
+.left {
     float:left;
     margin-right:10px;
 }
