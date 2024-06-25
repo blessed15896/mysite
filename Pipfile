@@ -8,6 +8,7 @@ django = "*"
 python-decouple = "*"
 django-taggit = "*"
 markdown = "*"
+psycopg = "*"
 
 [dev-packages]
 django-extensions = "*"

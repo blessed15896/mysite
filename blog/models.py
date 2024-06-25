@@ -51,6 +51,9 @@ class Post(models.Model):
                              self.publish.day,
                              self.slug])
 
+    def natural_key(self):
+        return self.slug, self.publish
+
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments')
