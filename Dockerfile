@@ -1,7 +1,7 @@
 FROM python:3.12.3-slim
 
 RUN apt-get update -qq \
-    && rm -rf /var/lib/apt/lists/* \
+    && rm -rf /var/lib/apt/lists/*
 
 # Set environment variables
 ENV PIP_DISABLE_PIP_VERSION_CHECK 1

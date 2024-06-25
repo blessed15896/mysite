@@ -1,28 +1,34 @@
 services:
   web:
     build: .
-    env_file: django/.env
+    env_file: src/.env
     environment:
       - DB_NAME=postgres
       - DB_USER=postgres
       - DB_PASSWORD=postgres
       - DB_HOST=db
+      - DJANGO_SETTINGS_MODULE=mysite.settings.prod
     volumes:
       - .:/code
+
+  web_static:
+    extends:
+      service: web
+    command: python /code/src/manage.py collectstatic --noinput
+    depends_on:
+      - web
 
   web_migrate:
     extends:
       service: web
-    command: python /code/django/manage.py migrate
+    command: python /code/src/manage.py migrate
     depends_on:
       - db
 
   web_run:
     extends:
       service: web
-    command: python /code/django/manage.py runserver 0.0.0.0:8000
-    ports:
-      - "8000:8000"
+    command: ["uwsgi", "--ini", "/code/config/uwsgi/uwsgi.ini"]
     depends_on:
       - db
       - web_migrate
@@ -36,3 +42,15 @@ services:
       - POSTGRES_DB=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
+
+  nginx:
+    image: nginx:1.25.5
+    restart: always
+    volumes:
+      - ./config/nginx:/etc/nginx/templates
+      - .:/code
+    ports:
+      - "80:80"
+    depends_on:
+      - web_run
+      - db
