@@ -3,5 +3,25 @@
     "model": "sites.site",
     "pk": 1,
     "fields": { "domain": "127.0.0.1:80", "name": "127.0.0.1:80" }
+  },
+  {
+    "model": "blog.post",
+    "pk": 1,
+    "fields": {
+      "title": "First Post",
+      "slug": "first-post",
+      "author": 1,
+      "body": "Post body",
+      "status": "PB"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$wc1oNgQtkoCh3QXPiNL9mn$Qe2W5hTOj8xY1/c7dRjrUS4EkhYimSdBkU3UD8EVxF8=",
+      "is_superuser": true,
+      "username": "root"
+    }
   }
 ]
