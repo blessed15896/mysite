@@ -31,7 +31,7 @@ Clone this repository
 Run the following command inside the repository root to create an environment variable file
 
 ```bash
-$ cp .env.example .env
+$ cp django/.env.example django/.env
 ```
 
 Make the following changes to the .env file
