@@ -64,12 +64,6 @@ Move into the django source code directory
 $ cd src
 ```
 
-Create superuser
-
-```bash
-$ python manage.py createsuperuser
-```
-
 Seed the database
 
 ```bash
@@ -79,5 +73,9 @@ $ python manage.py loaddata mysite_data.json
 ### Access the Application
 
 - Access the blog admin at [http://127.0.0.1/admin](http://127.0.0.1/admin)
+
+  `Username: root`
+
+  `Password: 1234pass`
 
 - Access the blog site at [http://127.0.0.1/blog](http://127.0.0.1/blog)
