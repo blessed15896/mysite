@@ -26,7 +26,7 @@ Clone this repository
 
 - Open [https://myaccount.google.com/security](https://myaccount.google.com/security) to enable 2-step verification for your account
 
-- Access [https://myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords) to creaate an app password
+- Access [https://myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords) to creaate an app password. \*_Make sure to copy the generated password._
 
 Run the following command inside the repository root to create an environment variable file
 
@@ -36,11 +36,11 @@ $ cp .env.example .env
 
 Make the following changes to the .env file
 
-- Replace EMAIL_HOST_USER with <your-gmail-email-account>
+- Replace EMAIL_HOST_USER with `your-gmail-email-address`
 
 - Replace EMAIL_HOST_PASSWORD with a your newly created app password
 
-- Replace DEFAULT_FROM_EMAIL with "My Blog <your-gmail-email-account>"
+- Replace DEFAULT_FROM_EMAIL with "My Blog <`your-gmail-email-address`>"
 
 ##### Run Docker
 
