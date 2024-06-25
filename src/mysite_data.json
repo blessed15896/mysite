@@ -2,6 +2,6 @@
   {
     "model": "sites.site",
     "pk": 1,
-    "fields": { "domain": "127.0.0.1", "name": "127.0.0.1" }
+    "fields": { "domain": "127.0.0.1:80", "name": "127.0.0.1:80" }
   }
 ]
