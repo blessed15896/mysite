@@ -58,7 +58,7 @@ In another terminal, run the following commands
 $ docker compose exec web_run bash
 ```
 
-Move into the django application directory
+Move into the django source code directory
 
 ```bash
 $ cd src
