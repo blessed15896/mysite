@@ -12,6 +12,9 @@
       "slug": "first-post",
       "author": 1,
       "body": "Post body",
+      "publish": "2024-06-25T14:34:52Z",
+      "created": "2024-06-25T14:35:06.682Z",
+      "updated": "2024-06-25T14:35:06.682Z",
       "status": "PB"
     }
   },
@@ -20,8 +23,17 @@
     "pk": 1,
     "fields": {
       "password": "pbkdf2_sha256$720000$wc1oNgQtkoCh3QXPiNL9mn$Qe2W5hTOj8xY1/c7dRjrUS4EkhYimSdBkU3UD8EVxF8=",
+      "last_login": "2024-06-25T14:39:41.920Z",
       "is_superuser": true,
-      "username": "root"
+      "username": "root",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-06-25T14:32:50.909Z",
+      "groups": [],
+      "user_permissions": []
     }
   }
 ]
