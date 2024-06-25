@@ -24,7 +24,7 @@ Inside the repository root, run the following command to start the docker contai
 $ docker compose up
 ```
 
-In another terminal, run the following commands to create a superuser
+In another terminal, run the following commands
 
 ```bash
 $ docker compose exec web_run bash
