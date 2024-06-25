@@ -8,10 +8,10 @@ django = "*"
 python-decouple = "*"
 django-taggit = "*"
 markdown = "*"
-psycopg = "*"
+psycopg2-binary = "*"
+django-extensions = "*"
 
 [dev-packages]
-django-extensions = "*"
 ipython = "*"
 
 [requires]
