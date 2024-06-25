@@ -61,7 +61,7 @@ $ docker compose exec web_run bash
 Move into the django application directory
 
 ```bash
-$ cd django
+$ cd src
 ```
 
 Create superuser
@@ -78,6 +78,6 @@ $ python manage.py loaddata mysite_data.json
 
 ### Access the Application
 
-- Access the blog admin at [127.0.0.1:8000/admin](127.0.0.1:8000/admin)
+- Access the blog admin at [127.0.0.1/admin](127.0.0.1/admin)
 
-- Access the blog site at [127.0.0.1:8000/blog](127.0.0.1:8000/blog)
+- Access the blog site at [127.0.0.1/blog](127.0.0.1/blog)
